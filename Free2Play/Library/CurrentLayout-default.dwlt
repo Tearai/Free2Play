@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 127
+  controlID: 82
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1357
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/SimpleNaturePack/Prefabs
+    - Assets/RPGPP_LT/Prefabs/Props
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/SimpleNaturePack/Prefabs
+  - Assets/RPGPP_LT/Prefabs/Props
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\user\Documents\GitHub\Free2Play\Free2Play
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b23c0000
-    m_LastClickedID: 15538
-    m_ExpandedIDs: 00000000a23c0000a43c000000ca9a3b
+    m_SelectedIDs: 7e3d0000
+    m_LastClickedID: 15742
+    m_ExpandedIDs: 00000000c63c0000823d0000a83d0000b63d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a23c0000a43c0000
+    m_ExpandedIDs: 00000000c43c0000c63c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 52fbffff
+      m_ExpandedIDs: 7cf0ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.08587618, y: 0.57157665, z: -9.138151}
+    m_Target: {x: -1.1737708, y: 5.672258, z: 11.371259}
     speed: 2
-    m_Value: {x: 0.08587618, y: 0.57157665, z: -9.138151}
+    m_Value: {x: -1.1737708, y: 5.672258, z: 11.371259}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -592,20 +592,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.24019966, y: 0.057343073, z: -0.014212493, w: 0.9689434}
+    m_Target: {x: 0.09247616, y: 0.09158838, z: -0.008521024, w: 0.99148357}
     speed: 2
-    m_Value: {x: 0.24164827, y: 0.057320617, z: -0.01429823, w: 0.9685639}
+    m_Value: {x: 0.09246084, y: 0.09307305, z: -0.008659501, w: 0.991319}
   m_Size:
-    m_Target: 0.41991985
+    m_Target: 1.965636
     speed: 2
-    m_Value: 0.41991985
+    m_Value: 1.6656361
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.12094
-    m_SpeedNormalized: 0.06
+    m_Speed: 1.0204899
+    m_SpeedNormalized: 0.51
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -679,7 +679,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -692,7 +692,7 @@ MonoBehaviour:
       y: 21
       width: 730
       height: 1265
-    m_Scale: {x: 0.7176339, y: 0.7176339}
+    m_Scale: {x: 0.70591515, y: 0.70591515}
     m_Translation: {x: 365, y: 632.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -700,10 +700,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -508.61588
-      y: -881.3686
-      width: 1017.23175
-      height: 1762.7372
+      x: -517.0593
+      y: -896.00006
+      width: 1034.1187
+      height: 1792.0001
     m_MinimalGUI: 1
   m_defaultScale: 0.7176339
   m_LastWindowPixelSize: {x: 730, y: 1286}
