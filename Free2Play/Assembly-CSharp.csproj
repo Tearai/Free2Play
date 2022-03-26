@@ -55,6 +55,10 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Scene3_Script1.cs" />
     <Compile Include="Assets\Scenes\MainMenu\MainMenu.cs" />
+    <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\HurtEnemy.cs" />
+    <Compile Include="Assets\Script\EnemyHealth.cs" />
+    <Compile Include="Assets\Script\AnimationControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
