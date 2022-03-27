@@ -6,7 +6,11 @@ public class HurtEnemy : MonoBehaviour
 {
 
     //Declaring Damge Variable
-    public float damageToGive; 
+    public float StartDmg;
+    public float damageToGive;
+
+    //Linking Weapon Damage;
+    public UI dmg;
 
 
 
@@ -20,7 +24,7 @@ public class HurtEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        damageToGive = StartDmg + dmg.WeaponDmg;
     }
 
     public void Damage()

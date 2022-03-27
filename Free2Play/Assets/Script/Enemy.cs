@@ -20,8 +20,12 @@ public class Enemy : MonoBehaviour
     public HurtEnemy dmg;
     public float DamageCounter;
 
+    //Reference to Floor + Coins;
+    public bool GetCoins;
+
     //Animations;
     Animator animator;
+
 
 
     // Start is called before the first frame update
@@ -45,6 +49,11 @@ public class Enemy : MonoBehaviour
         {
             EnemyCurrentHealth = HealthUpdate;
             healthbar.setMaxHealth(HealthUpdate);
+            GetCoins = true;
+        }
+        else
+        {
+            GetCoins = false;
         }
 
         //Animations;

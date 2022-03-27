@@ -11,6 +11,9 @@ public class UI : MonoBehaviour
     GameStatus gameStatus;
     public bool Get;
 
+    //Shop;
+    public float WeaponDmg;
+
     //Reference to Enemy script;
     public Enemy Data;
 
@@ -29,7 +32,7 @@ public class UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Get = Data.animTrue;
+
     }
 
     // Update is called once per frame
@@ -37,11 +40,8 @@ public class UI : MonoBehaviour
     {
         ShowStatus();
 
-        if (Get == true)
-        {
-            status();
-            print("test");
-        }
+        GetCoin();
+
 
 
     }
@@ -54,5 +54,21 @@ public class UI : MonoBehaviour
         coins = gameStatus.coins += (int)Mathf.Floor(UnityEngine.Random.Range(1.0f, 20.0f));
         gameStatus.currentLevel++;
 
+    }
+
+    public void GetCoin()
+    {
+        if (Data.GetCoins == true)
+        {
+            status();
+        }
+    }
+
+    public void Shop()
+    {
+
+        
+            WeaponDmg = 10;
+        
     }
 }
