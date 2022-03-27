@@ -9,6 +9,7 @@ public class UI : MonoBehaviour
     //Declaring variables;
     public int coins;
     GameStatus gameStatus;
+    public bool Get;
 
     //Reference to Enemy script;
     public Enemy Data;
@@ -28,17 +29,21 @@ public class UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Get = Data.animTrue;
     }
 
     // Update is called once per frame
     void Update()
     {
         ShowStatus();
-        if (Data.EnemyCurrentHealth <= Data.DamageCounter)
+
+        if (Get == true)
         {
             status();
+            print("test");
         }
+
+
     }
 
 
