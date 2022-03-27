@@ -11,12 +11,17 @@ public class Enemy : MonoBehaviour
 
     public float DamageMulti;
 
+    public bool animTrue;
+
     //Linking to HealthBar;
     public EnemyHealth healthbar;
 
     //Refrence to weapon dmg;
     public HurtEnemy dmg;
     public float DamageCounter;
+
+    //Animations;
+    Animator animator;
 
 
     // Start is called before the first frame update
@@ -27,6 +32,10 @@ public class Enemy : MonoBehaviour
         healthbar.setMaxHealth(EnemyMaxHealth);
 
         DamageCounter = -dmg.damageToGive;
+
+
+        //Reference to animator;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,6 +45,20 @@ public class Enemy : MonoBehaviour
         {
             EnemyCurrentHealth = HealthUpdate;
             healthbar.setMaxHealth(HealthUpdate);
+        }
+
+        //Animations;
+        AttackAnim();
+        if(EnemyCurrentHealth == 0)
+        {
+            animTrue = true;
+            DeathAnim();
+        }
+
+        if(EnemyCurrentHealth == HealthUpdate)
+        {
+            animTrue = false;
+            DeathAnim();
         }
     }
 
@@ -49,4 +72,30 @@ public class Enemy : MonoBehaviour
     {
         EnemyCurrentHealth = EnemyMaxHealth;
     }
+
+    public void AttackAnim()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetBool("Attack", true);
+        }
+        else
+        {
+            animator.SetBool("Attack", false);
+        }
+    }
+
+    public void DeathAnim()
+    {
+        if (animTrue == true)
+        {
+            animator.SetBool("Death", true);
+        }
+        else
+        {
+            animator.SetBool("Death", false);
+        }
+    }
+
+
 }

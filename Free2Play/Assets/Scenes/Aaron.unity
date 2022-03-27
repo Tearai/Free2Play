@@ -810,6 +810,7 @@ MonoBehaviour:
   EnemyCurrentHealth: 100
   HealthUpdate: 0
   DamageMulti: 1.1
+  animTrue: 0
   healthbar: {fileID: 1706981334}
   dmg: {fileID: 839104234}
   DamageCounter: 0
@@ -826,19 +827,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 5
---- !u!114 &839104235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839104230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e5d019d10cb1c429178ce74a7a5953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 839104231}
 --- !u!4 &874329258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4943765590059028, guid: e7489574cca6d4645a7019414b8288e8, type: 3}
@@ -984,9 +972,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 902688885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36714fdc98a89d342af8361be46af6f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0516f163a9edf0b479e003f4c79857cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
+  Data: {fileID: 839104231}
 --- !u!114 &902688888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,10 +1108,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093579189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e5d019d10cb1c429178ce74a7a5953, type: 3}
+  m_Script: {fileID: 11500000, guid: 41e6ee95c7fab7e4f9292d581b9015b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
 --- !u!1001 &1104427321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1465,9 +1454,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 902688887}
-        m_TargetAssemblyTypeName: Scene3_Script1, Assembly-CSharp
-        m_MethodName: RandomiseGameStatus
+      - m_Target: {fileID: 839104231}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: AttackAnim
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
