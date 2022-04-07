@@ -58,9 +58,10 @@
     <Compile Include="Assets\Script\EnemyHealth.cs" />
     <Compile Include="Assets\Script\HurtEnemy.cs" />
     <Compile Include="Assets\Script\Scene3_Script1.cs" />
+    <Compile Include="Assets\Script\TestCheckHP.cs" />
     <Compile Include="Assets\Scenes\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\Script\UI.cs" />
-    <Compile Include="Assets\Script\TestCheckHP.cs" />
+    <Compile Include="Assets\Script\Spawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

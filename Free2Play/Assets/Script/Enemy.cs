@@ -26,6 +26,10 @@ public class Enemy : MonoBehaviour
     //Animations;
     Animator animator;
 
+    //Reference to Floor;
+    public UI CurrentFloor;
+
+
 
 
     // Start is called before the first frame update
@@ -69,6 +73,10 @@ public class Enemy : MonoBehaviour
             animTrue = false;
             DeathAnim();
         }
+
+        //Updating Health;
+        DamageMulti = CurrentFloor.floor;
+        HealthUpdate = EnemyMaxHealth * DamageMulti;
     }
 
     public void HurtEnemy(float damageToGive)
